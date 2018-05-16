@@ -21,7 +21,7 @@
             <div class="text-xs-center">
               <h2 class="headline">While we're working on this you can still join our servers!</h2>
               <span class="subheading">
-                <i>It's <b>HIGHLY RECOMMENDED</b> you check out our <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1379990767">Mod Collection</a> before connecting!!</i>
+                <i>It's <b>HIGHLY RECOMMENDED</b> you subscribe to our <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1379990767">Mod Collection</a> before connecting!!</i>
               </span>
             </div>
           </v-flex>
