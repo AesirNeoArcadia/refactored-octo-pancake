@@ -1,9 +1,9 @@
 {
-  "name": "aesir",
+  "name": "anagaming",
   "version": "1.0.0",
-  "description": "Aesir Ark Server",
-  "author": "skozzii",
-  "private": true,
+  "description": "Aesir Neo Arcadia",
+  "author": "Fascinare",
+  "private": false,
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",

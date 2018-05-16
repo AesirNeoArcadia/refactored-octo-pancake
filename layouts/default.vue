@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app dark>
     <v-navigation-drawer
       v-model="drawer"
       app
@@ -22,20 +22,19 @@
         </v-list-tile>
       </v-list>
     </v-navigation-drawer>
-    <v-toolbar fixed app>
+    <v-toolbar fixed app class="grey--{darken}-{4}">
          
       <v-toolbar-title router
           :to="navHome.to" v-text="title"></v-toolbar-title>
     
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-sm-and-down">
-      <v-btn nuxt-link to="/" flat>Home</v-btn>
-      <v-btn nuxt-link to="/news" flat>News</v-btn>
-      <v-btn nuxt-link to="/server" flat>Server</v-btn>
-      <v-btn nuxt-link to="/community" flat>Community</v-btn>
-      <v-btn nuxt-link to="/maps" flat>Maps</v-btn>
-      <v-btn nuxt-link to="/baseLocations" flat>Base Locations</v-btn>
-      <v-btn nuxt-link to="/gallery" flat>Gallery</v-btn>
+      <v-btn nuxt-link to="/#" flat>Home</v-btn>
+      <v-btn nuxt-link to="/#" flat>Server Info</v-btn>
+      <v-btn href="https://discord.gg/cnrHUzG" flat>Discord</v-btn>
+      <v-btn nuxt-link to="/#" flat>Maps</v-btn>
+      <v-btn nuxt-link to="/#" flat>Gallery</v-btn>
+      <v-btn nuxt-link to="/#" flat>About</v-btn>
 
     </v-toolbar-items>
      <v-toolbar-side-icon class="hidden-md-and-up" @click="drawer = !drawer"></v-toolbar-side-icon>
@@ -47,7 +46,7 @@
     </v-content>
    
     <v-footer :fixed="fixed" app>
-      <span>&copy; 2017</span>
+      <span>&copy; 2018 Aesir Neo Arcadia</span>
     </v-footer>
   </v-app>
 </template>
@@ -61,12 +60,10 @@
         fixed: false,
         items: [
           { icon: 'apps', title: 'Home', to: '/' },
-          { icon: 'bubble_chart', title: 'News', to: '/news' },
-          { icon: 'bubble_chart', title: 'Server', to: '/server' },
-          { icon: 'bubble_chart', title: 'Community', to: '/community' },
-          { icon: 'bubble_chart', title: 'Maps', to: '/maps' },
-          { icon: 'bubble_chart', title: 'Base Locations', to: '/baseLocations' },
-          { icon: 'bubble_chart', title: 'Gallery', to: '/gallery' }
+          { icon: 'bubble_chart', title: 'Server', to: '/#' },
+          { icon: 'bubble_chart', title: 'Maps', to: '/#' },
+          { icon: 'bubble_chart', title: 'Gallery', to: '/#' },
+          { icon: 'bubble_chart', title: 'About', to: '/#' }
 
         ],
 
@@ -75,7 +72,7 @@
         ],
         miniVariant: false,
         right: true,
-        title: 'Aesir Ark Server'
+        title: 'Aesir Neo Arcadia'
       }
     }
   }

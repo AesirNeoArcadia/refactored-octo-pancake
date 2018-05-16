@@ -4,11 +4,11 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'aesir',
+    title: 'Aesir Neo Arcadia: Modded PVE ARK Server Cluster',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Aesir Ark Server' }
+      { hid: 'description', name: 'description', content: 'Aesir Neo Arcadia is a PVE ARK: Survival Evolved server cluster. We pride ourselves on hosting a fun, friendly, stable server for like-minded players' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
