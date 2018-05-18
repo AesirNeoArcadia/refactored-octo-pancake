@@ -4,6 +4,7 @@
       v-model="drawer"
       app
       right
+      class="grey darken-4"
     >
       <v-list>
         <v-list-tile
@@ -22,7 +23,7 @@
         </v-list-tile>
       </v-list>
     </v-navigation-drawer>
-    <v-toolbar fixed app class="grey--{darken}-{4}">
+    <v-toolbar fixed app>
          
       <v-toolbar-title router
           :to="navHome.to" v-text="title"></v-toolbar-title>
@@ -31,18 +32,16 @@
       <v-toolbar-items class="hidden-sm-and-down">
       <v-btn nuxt-link to="/#" flat>Home</v-btn>
       <v-btn nuxt-link to="/#" flat>Server Info</v-btn>
-      <v-btn href="https://discord.gg/cnrHUzG" flat>Discord</v-btn>
       <v-btn nuxt-link to="/#" flat>Maps</v-btn>
       <v-btn nuxt-link to="/#" flat>Gallery</v-btn>
+      <v-btn href="https://discord.gg/cnrHUzG" flat>Discord</v-btn>
       <v-btn nuxt-link to="/#" flat>About</v-btn>
 
     </v-toolbar-items>
      <v-toolbar-side-icon class="hidden-md-and-up" @click="drawer = !drawer"></v-toolbar-side-icon>
     </v-toolbar>
     <v-content>
-      <v-container>
-        <nuxt />
-      </v-container>
+      <nuxt />
     </v-content>
    
     <v-footer :fixed="fixed" app>
@@ -60,7 +59,7 @@
         fixed: false,
         items: [
           { icon: 'apps', title: 'Home', to: '/' },
-          { icon: 'bubble_chart', title: 'Server', to: '/#' },
+          { icon: 'bubble_chart', title: 'Server Info', to: '/#' },
           { icon: 'bubble_chart', title: 'Maps', to: '/#' },
           { icon: 'bubble_chart', title: 'Gallery', to: '/#' },
           { icon: 'bubble_chart', title: 'About', to: '/#' }

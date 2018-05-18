@@ -1,5 +1,18 @@
 /<template>
-    <h1>TEST SERVER</h1>
+    <div>
+        <section id="rules">
+
+        </section>
+        <section id="">
+            
+        </section>
+        <section id="">
+            
+        </section>
+        <section id="">
+            
+        </section>
+    </div>
 </template>
 
 <script>
