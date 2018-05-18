@@ -13,7 +13,7 @@
   <v-layout
           column
           wrap
-          class="my-5 px-5 mx-5"
+          class="my-5"
           align-center
         >
           <v-flex xs12 sm4 class="my-3">
