@@ -1,12 +1,19 @@
 <template>
 <div>
 <section>
-  <v-parallax src="banner.png" height="400"  class="elevation-4">
-    <v-layout column justify-center align-center >
-      <h1>Welcome to Aesir Neo Arcadia.</h1>
-      <h3>Don't mind the mess. We're working on it.</h3>
-      <p>This site is currently under construction.</p>
-    </v-layout>
+  <v-parallax src="banner2.png" height="400" class="elevation-4">
+    <v-jumbotron>
+      <v-container class="ml-4 mt-5">
+        <v-layout>
+          <v-flex>
+            <h1 class="display-2 red--text text--darken-1"><b>Welcome to Aesir Neo Arcadia</b></h1>
+            <span class="title pl-3">Don't mind the mess. We're working on it.</span>
+            <v-divider class="my-3"></v-divider>
+            <p>This site is currently under construction.</p>
+          </v-flex>
+          </v-layout>
+      </v-container>
+    </v-jumbotron>
   </v-parallax>
 </section>
 <section>
@@ -35,26 +42,26 @@
                     <v-card-title primary-title class="layout justify-center">
                       <div class="headline text-xs-center">Maps</div>
                     </v-card-title>
-                    <v-card-text class="layout justify-center">
+                    <v-card-text>
                       <p>Please join us on our stunning collection of ARK maps. We plan to keep a core set of three maps, and have a fourth on rotation. Our current rotation map is Olympus.</p>
                     </v-card-text>
                     <v-list class="blue-grey darken-2">
-                      <v-list-tile key="Ragnarok" href='steam://connect/172.103.28.58:27015'>
+                      <v-list-tile key="Ragnarok" href='steam://connect/140.186.12.216:27015'>
                         <v-list-tile-content>
                           <v-list-tile-title>Ragnarok</v-list-tile-title>
                         </v-list-tile-content>
                       </v-list-tile>
-                      <v-list-tile key="Aberration" href='steam://connect/172.103.28.58:27016'>
+                      <v-list-tile key="Aberration" href='steam://connect/140.186.12.216:27016'>
                         <v-list-tile-content>
                           <v-list-tile-title>Aberration</v-list-tile-title>
                         </v-list-tile-content>
                       </v-list-tile>
-                      <v-list-tile key="The Volcano" href='steam://connect/172.103.28.58:27018'>
+                      <v-list-tile key="The Volcano" href='steam://connect/140.186.12.216:27018'>
                         <v-list-tile-content>
                           <v-list-tile-title>The Volcano</v-list-tile-title>
                         </v-list-tile-content>
                       </v-list-tile>
-                      <v-list-tile key="Olympus" href='steam://connect/172.103.28.58:27019'>
+                      <v-list-tile key="Olympus" href='steam://connect/140.186.12.216:27019'>
                         <v-list-tile-content>
                           <v-list-tile-title>Olympus</v-list-tile-title>
                         </v-list-tile-content>
@@ -99,3 +106,14 @@
 </section>
 </div>
 </template>
+<script>
+export default {
+  data () {
+    return {
+    }
+  }
+}
+</script>
+<style>
+</style>
+

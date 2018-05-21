@@ -18,7 +18,7 @@
             <v-icon v-html="item.icon"></v-icon>
           </v-list-tile-action>
           <v-list-tile-content>
-            <v-list-tile-title v-text="item.title"></v-list-tile-title>
+            <v-list-tile-title v-text="item.title" class="sitetitle"></v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
       </v-list>
@@ -26,16 +26,16 @@
     <v-toolbar fixed app>
          
       <v-toolbar-title router
-          :to="navHome.to" v-text="title"></v-toolbar-title>
+          :to="navHome.to" v-text="title" class="sitetitle"></v-toolbar-title>
     
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-sm-and-down">
-      <v-btn nuxt-link to="/#" flat>Home</v-btn>
-      <v-btn nuxt-link to="/#" flat>Server Info</v-btn>
-      <v-btn nuxt-link to="/#" flat>Maps</v-btn>
-      <v-btn nuxt-link to="/#" flat>Gallery</v-btn>
-      <v-btn href="https://discord.gg/cnrHUzG" flat>Discord</v-btn>
-      <v-btn nuxt-link to="/#" flat>About</v-btn>
+      <v-btn nuxt-link to="/" flat><v-icon small left>fas fa-home</v-icon>Home</v-btn>
+      <v-btn nuxt-link to="/#" flat><v-icon small left>fas fa-info</v-icon>Server Info</v-btn>
+      <v-btn nuxt-link to="/#" flat><v-icon small left>fas fa-map</v-icon>Maps</v-btn>
+      <v-btn nuxt-link to="/#" flat><v-icon small left>fas fa-images</v-icon>Gallery</v-btn>
+      <v-btn href="https://discord.gg/cnrHUzG" flat><v-icon small left>fab fa-discord</v-icon>Discord</v-btn>
+      <v-btn nuxt-link to="/#" flat><v-icon small left>fas fa-question-circle</v-icon>About</v-btn>
 
     </v-toolbar-items>
      <v-toolbar-side-icon class="hidden-md-and-up" @click="drawer = !drawer"></v-toolbar-side-icon>
@@ -46,6 +46,15 @@
    
     <v-footer :fixed="fixed" app>
       <span>&copy; 2018 Aesir Neo Arcadia</span>
+      <v-spacer></v-spacer>
+      <span align-center class="pr-4 pt-1">
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="ZACLWXJP2UAH2">
+          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+          <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+      </span>
     </v-footer>
   </v-app>
 </template>
@@ -58,12 +67,11 @@
         drawer: false,
         fixed: false,
         items: [
-          { icon: 'apps', title: 'Home', to: '/' },
-          { icon: 'bubble_chart', title: 'Server Info', to: '/#' },
-          { icon: 'bubble_chart', title: 'Maps', to: '/#' },
-          { icon: 'bubble_chart', title: 'Gallery', to: '/#' },
-          { icon: 'bubble_chart', title: 'About', to: '/#' }
-
+          { icon: 'fas fa-home', title: 'Home', to: '/' },
+          { icon: 'fas fa-info', title: 'Server Info', to: '/#' },
+          { icon: 'fas fa-map', title: 'Maps', to: '/#' },
+          { icon: 'fas fa-images', title: 'Gallery', to: '/#' },
+          { icon: 'fas fa-question-circle', title: 'About', to: '/#' }
         ],
 
         navHome: [
@@ -76,3 +84,9 @@
     }
   }
 </script>
+<style>
+  .sitetitle {
+    font-family: 'Cabin Condensed';
+    
+  }
+</style>
